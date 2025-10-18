@@ -20,6 +20,9 @@ importers:
       '@effect/sql':
         specifier: ^0.46.0
         version: 0.46.0(@effect/experimental@0.56.0(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4))(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4)
+      '@effect/sql-drizzle':
+        specifier: ^0.45.0
+        version: 0.45.0(@effect/sql@0.46.0(@effect/experimental@0.56.0(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4))(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4))(drizzle-orm@0.44.6(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)(pg@8.16.3)(postgres@3.4.7))(effect@3.18.4)
       '@effect/sql-pg':
         specifier: ^0.47.0
         version: 0.47.0(@effect/experimental@0.56.0(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4))(@effect/platform@0.92.1(effect@3.18.4))(@effect/sql@0.46.0(@effect/experimental@0.56.0(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4))(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4))(effect@3.18.4)
@@ -269,6 +272,13 @@ packages:
     peerDependencies:
       '@effect/platform': ^0.92.1
       effect: ^3.18.4
+
+  '@effect/sql-drizzle@0.45.0':
+    resolution: {integrity: sha512-lfHX7r+z47zFWicdth6qyqif3e+h7cC1n2a2HPAYQFjyMYGhnVd1GSTCT1jHeRo/4e67Shsrxxj8KYLEQk79zw==}
+    peerDependencies:
+      '@effect/sql': ^0.46.0
+      drizzle-orm: '>=0.43.1 <0.50'
+      effect: ^3.18.0
 
   '@effect/sql-pg@0.47.0':
     resolution: {integrity: sha512-0qu9YkfcD8qwPbdVKfoThr8eH4QRqojF9Z4/xyy/gKl+M1QGrygJFUYrhBCCaTly1YzkVTviOnZyhVIEjjYGmA==}
@@ -1733,6 +1743,12 @@ snapshots:
       '@effect/platform': 0.92.1(effect@3.18.4)
       effect: 3.18.4
       msgpackr: 1.11.5
+
+  '@effect/sql-drizzle@0.45.0(@effect/sql@0.46.0(@effect/experimental@0.56.0(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4))(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4))(drizzle-orm@0.44.6(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)(pg@8.16.3)(postgres@3.4.7))(effect@3.18.4)':
+    dependencies:
+      '@effect/sql': 0.46.0(@effect/experimental@0.56.0(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4))(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4)
+      drizzle-orm: 0.44.6(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)(pg@8.16.3)(postgres@3.4.7)
+      effect: 3.18.4
 
   '@effect/sql-pg@0.47.0(@effect/experimental@0.56.0(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4))(@effect/platform@0.92.1(effect@3.18.4))(@effect/sql@0.46.0(@effect/experimental@0.56.0(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4))(@effect/platform@0.92.1(effect@3.18.4))(effect@3.18.4))(effect@3.18.4)':
     dependencies:
